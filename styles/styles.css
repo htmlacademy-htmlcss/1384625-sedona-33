@@ -39,14 +39,24 @@ body {
     color: #ffffff;
     background-color: #83B3D3;
     display: block;
+    border-radius: 4px;
+    width: 160px;
 }
 .button-link {
     color: #ffffff;
     background-color: #756257;
     border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 10px;
 }
 .button-pressed {
     background-color: #7DB54F;
+}
+.button-favorite {
+  width: 140px;
+}
+.button-about {
+  width: 130px;
 }
 
 /*header index*/
@@ -184,6 +194,15 @@ body {
 .advantages-2 {
     color:#ffffff;
 }
+.advantages-list li:nth-of-type(odd) div{
+  background: rgba(131, 179, 211, 0.12);
+}
+.advantages-list-1 li:nth-of-type(even) div{
+  background: #FFFFFF;
+}
+.advantages-list-2 li:nth-of-type(even) div{
+  background: rgba(131, 179, 211, 0.2);
+}
 
 /*section hotel-search*/
 .hotel-search {
@@ -227,6 +246,7 @@ body {
 .submit-button {
     font-size: 20px;
     line-height: 26px;
+    width: 200px;
 }
 
 .submit-title {
@@ -351,6 +371,10 @@ body {
     font-weight: 400;
     color:#333333;
 }
+.catalog-hotels{
+  width: 1056px;
+  margin:0 auto;
+}
 .sorting-container {
   display: flex;
   align-items: baseline ;
@@ -358,21 +382,54 @@ body {
   width: 1056px;
   margin-bottom: 53px;
 }
+.hotels-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+  row-gap: 10px;
+}
+.hotels-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.hotel-card-image-link {
+  margin-bottom: 16px;
+}
 .hotel-card-link{
     text-decoration: none;
     color: #000000;
+    flex-grow: 1;
+    margin-bottom: 16px;
 }
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
 .hotel-card-title{
     font-size: 24px;
     line-height: 31px;
+    margin: 0;
 }
 .hotel-card-type {
     color:#333333;
     font-weight: 400;
+    margin: 0;
 }
 .hotel-card-price {
     color:#333333;
     font-weight: 400;
+    margin: 0;
 }
 .rating{
     font-weight: 400;
@@ -385,9 +442,27 @@ body {
     padding-top: 9px;
     padding-bottom: 10px;
 }
+.show-more-container{
+  width: 1056px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+
+}
+.button-show-more {
+  margin: 0 auto;
+  width: 620px;
+  padding-top:17px;
+  padding-bottom: 17px;
+}
 .pagination-container{
     display: flex;
     width:1056px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 .pagination {
     display: flex;
@@ -395,10 +470,21 @@ body {
     margin:0px;
     padding:0px;
 }
+
 .pagination-link {
+  display: block;
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
     text-decoration: none;
     color:#ffffff;
     background-color: #83B3D3;
+    border-radius: 4px;
+    padding: 5px; /*не пойму почему не работает*/
+
+}
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 .pagination-current {
     color:#000000;
