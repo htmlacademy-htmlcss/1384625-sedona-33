@@ -320,7 +320,7 @@ body {
   text-decoration: none;
 }
 .footer-social{
-  width: 150px;
+  width: 200px;
   margin-left: 72px;
 }
 .footer-social-list{
@@ -345,14 +345,23 @@ body {
 .footer-developer-logo {
   display: block;
 }
-.button-social-twitter{ /*не добавились почему то*/
+.button-social{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+.button-social-twitter{
   background-image: url("../images/icons/twitter.svg");
 }
 .button-social-facebook{
   background-image: url("../images/icons/facebook.svg");
 }
-.button-social-facebook{
-  background-image: url("../images/icons/facebook.svg");
+.button-social-youtube{
+  background-image: url("../images/icons/youtube.svg");
 }
 
 
