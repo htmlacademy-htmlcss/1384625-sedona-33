@@ -27,10 +27,13 @@ body {
   line-height: 23px;
   color:#000000;
   background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 .body-container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
 }
 
 /*button*/
@@ -183,6 +186,7 @@ body {
 .advantages-container{
   display: flex;
   width: 1200px;
+
 }
 .advantages-list{
   list-style: none;
@@ -209,8 +213,9 @@ body {
 }
 .advantages-number {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
   margin-bottom: 30px;
 }
 .advantages-card {
@@ -218,6 +223,7 @@ body {
   height: 384px;
   text-align: center;
   background-color:#83B3D3;
+  box-sizing: border-box;
 }
 .advantages-list .advantages-card {
   padding-top: 184px;
@@ -225,6 +231,7 @@ body {
 .advantages-1,
 .advantages-2 {
   color:#ffffff;
+  padding-top: 97px;
 }
 .advantages-list li:nth-of-type(odd) div{
   background: rgba(131, 179, 211, 0.12);
@@ -235,21 +242,23 @@ body {
 .advantages-list-2 li:nth-of-type(even) div{
   background: rgba(131, 179, 211, 0.2);
 }
-.advantages-list-1 .advantages-item:nth-child(1) .advantages-card{
+
+.advantages-list-1 .advantages-item .advantages-house{
   background-image: url('../images/icons/house.svg');
   background-repeat: no-repeat;
   background-position: 50% 81px;
 }
-.advantages-list-1 .advantages-item:nth-child(2) .advantages-card{
+.advantages-list-1 .advantages-item .advantages-food{
   background-image: url('../images/icons/food.svg');
   background-repeat: no-repeat;
   background-position: 50% 81px;
 }
-.advantages-list-1 .advantages-item:nth-child(3) .advantages-card{
+.advantages-list-1 .advantages-item .advantages-gifts{
   background-image: url('../images/icons/gifts.svg');
   background-repeat: no-repeat;
   background-position: 50% 81px;
 }
+
 /*section hotel-search*/
 .hotel-search {
   text-align: center;
@@ -326,6 +335,7 @@ body {
 .footer-social-list{
   list-style: none;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin:0;
   padding:0;
@@ -333,7 +343,7 @@ body {
 .footer-social-item {
   width: 25px;
   height: 25px;
-  margin-right: 10px; /*проблема со взятием размеров иконок для соц сетей*/
+  margin-right: 10px;
 }
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
@@ -353,15 +363,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 16px;
-}
-.button-social-twitter{
-  background-image: url("../images/icons/twitter.svg");
-}
-.button-social-facebook{
-  background-image: url("../images/icons/facebook.svg");
-}
-.button-social-youtube{
-  background-image: url("../images/icons/youtube.svg");
 }
 
 
@@ -387,6 +388,7 @@ body {
   display: flex;
 }
 .breadcrumbs {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -396,6 +398,19 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  color:#FFFFFF;
+  text-decoration: none;
+}
+.breadcrumbs-item:not(:last-child)::after{
+  content: "";
+  display: inline-block;
+  background: url(../images/icons/breadcrumbs-arrow.svg);
+  width:5px;
+  height:8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 10px;
+
 }
 
 .catalog-filter-title{
@@ -486,6 +501,26 @@ body {
   font-weight: 400;
   margin: 0;
 }
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+}
+.stars {
+  background-image: url("../images/icons/rating-star.svg");
+  background-repeat: space;
+  background-position: center;
+  height: 17px;
+}
+.stars-four {
+  width: 80px;
+}
+.stars-three {
+  width: 68px;
+}
+.stars-two {
+  width: 43px;
+}
+
 .rating{
   font-weight: 400;
   font-size: 16px;
@@ -496,6 +531,7 @@ body {
   text-align: center;
   padding-top: 9px;
   padding-bottom: 10px;
+  border-radius: 4px;
 }
 .show-more-container{
   width: 1056px;
@@ -521,13 +557,17 @@ body {
 }
 .pagination {
   display: flex;
+  justify-content: baseline;
+  flex-wrap: wrap;
   list-style: none;
   margin:0px;
   padding:0px;
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 55px;
   height: 55px;
@@ -549,6 +589,7 @@ body {
   font-weight: 400;
   margin:0px;
 }
+
 .select-number-display {
   font-weight: 400;
 }
