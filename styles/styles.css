@@ -296,7 +296,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: 0;
+  margin: 0 auto;
+  width: 250px;
 }
 .hotel-search-subtitle{
   margin: 0 auto;
@@ -334,27 +335,33 @@ body {
   color:#ffffff;
   padding-top: 97px;
 }
-.advantages-list li:nth-of-type(odd) div{
-  background: rgba(131, 179, 211, 0.12);
-}
-.advantages-list-1 li:nth-of-type(even) div{
-  background: #FFFFFF;
-}
-.advantages-list-2 li:nth-of-type(even) div{
-  background: rgba(131, 179, 211, 0.2);
-}
 
-.advantages-list-1 .advantages-item .advantages-house{
+.advantages-house,
+.advantages-gifts,
+.advantages-3,
+.advantages-5 {
+  background: rgba(131, 179, 211, 0.12);
+  color:#000000;
+}
+.advantages-4 {
+  background: rgba(131, 179, 211, 0.20);
+  color:#000000;
+}
+.advantages-food {
+  background-color: #FFFFFF;
+  color:#000000;
+}
+.advantages-house{
   background-image: url('../images/icons/house.svg');
   background-repeat: no-repeat;
   background-position: 50% 89px;
 }
-.advantages-list-1 .advantages-item .advantages-food{
+.advantages-food{
   background-image: url('../images/icons/food.svg');
   background-repeat: no-repeat;
   background-position: 50% 90px;
 }
-.advantages-list-1 .advantages-item .advantages-gifts{
+.advantages-gifts{
   background-image: url('../images/icons/gifts.svg');
   background-repeat: no-repeat;
   background-position: 50% 86px;
