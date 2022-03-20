@@ -9,39 +9,38 @@
     <div class="body-container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="header-logo-link">
+          <a class="header-logo-link" href="index.html">
             <img class="header-logo" src="images/logo/sedona-city.svg" width="139" height="70" alt="Логотип Сайта Седона">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html" >Главная</a>
+              <a class="navigation-link" href="catalog.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" >Гостиницы</a>
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-user-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m19.03 17.05-3.71-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.61-8-8.02-8a8.12 8.12 0 0 0-8.03 8.1c0 4.4 3.61 8 8.03 8 1.8 0 3.5-.6 4.91-1.7l3.71 3.7 1.4-1.5ZM9 14.55c-3.31 0-6.02-2.7-6.02-6a6.03 6.03 0 0 1 12.03 0c0 3.3-2.7 6-6.01 6Z" fill="#000"/></svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link favorite-link" href="#">
+              <a class="navigation-user-link favorite-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44 17c-.3 0-.6-.1-.8-.4-5.41-6.1-6.72-7.5-7.02-7.9A5.4 5.4 0 0 1 6.03 0c1.3 0 2.51.5 3.51 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.3 3.4l-7.02 7.9c-.2.2-.4.3-.8.3ZM3.43 7.5c.3.4 3.5 4 6.11 6.9l6.22-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2.01.5-2.71 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.72-1.3c-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorite-count">12</span>
               </a>
             </li>
           </ul>
-          <a class="button button-link" href="#">Хочу сюда!</a>
+          <a class="button button-link navigation-button" href="#">Хочу сюда!</a>
         </nav>
       </header>
-
       <main class="main-inner main-container">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -66,14 +65,14 @@
                           <li class="catalog-filter-item">
                               <label class="control">
                                   <input class="control-input visually-hidden" type="checkbox" name="Бассейн" checked>
-                                  <span class="control-mark"></span>
+                                  <span class="control-mark "></span>
                                   <span class="control-label">Бассейн</span>
                               </label>
                           </li>
                           <li class="catalog-filter-item">
                               <label class="control">
                                   <input class="control-input visually-hidden" type="checkbox" name="Парковка" checked>
-                                  <span class="control-mark"></span>
+                                  <span class="control-mark "></span>
                                   <span class="control-label">Парковка</span>
                               </label>
                           </li>
@@ -91,7 +90,7 @@
                       <ul class="catalog-filter-list">
                           <li class="catalog-filter-item">
                               <label class="control">
-                                  <input class="control-input visually-hidden" type="radio" name="Гостиница" checked>
+                                  <input class="control-input visually-hidden" type="radio" name="control-input" checked>
                                   <span class="control-mark"></span>
                                   <span class="control-label">Гостиница</span>
 
@@ -99,15 +98,15 @@
                           </li>
                           <li class="catalog-filter-item">
                               <label class="control">
-                                  <input class="control-input visually-hidden" type="radio" name="Мотель" >
-                                  <span class="control-mark"></span>
+                                  <input class="control-input visually-hidden" type="radio" name="control-input" >
+                                  <span class="control-mark "></span>
                                   <span class="control-label">Мотель</span>
 
                               </label>
                           </li>
                           <li class="catalog-filter-item">
                               <label class="control">
-                                  <input class="control-input visually-hidden" type="radio" name="Апартаменты">
+                                  <input class="control-input visually-hidden" type="radio" name="control-input">
                                   <span class="control-mark"></span>
                                   <span class="control-label">Апартаменты</span>
 
@@ -199,7 +198,7 @@
                   <img class="hotel-card-image" src="images/hotels/Desert-Quail-Inn.jpg" width="300" height="206" alt="Desert Quail Inn">
                 </a>
                 <a class="hotel-card-link">
-                  <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+                  <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 </a>
                 <div class="info-container">
                   <p class="hotel-card-type">Гостиница</p>
@@ -221,7 +220,7 @@
                   <img class="hotel-card-image" src="images/hotels/Villas-at-Poco-Diablo.jpg" width="300" height="206" alt="Villas at Poco Diablo ">
                 </a>
                 <a class="hotel-card-link">
-                  <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+                  <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <div class="info-container">
                   <p class="hotel-card-type">Гостиница</p>
@@ -291,19 +290,21 @@
               </select>
           </div>
         </section>
+
         <section class="submit submit-inner">
           <h2 class="submit-title title">Подпишитесь на рассылку</h2>
           <p class="subtitle submit-subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <div class="submit-form-container">
             <form class="submit-form">
               <label class="submit-form-label"><span class="visually-hidden">Ваш e-mail</span>
-                <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="Ваш e-mail">
+                <input class="field submit-field" type="text" id="appointment-date" name="appointment-date" placeholder="Ваш e-mail">
               </label>
               <button class="button submit-button" type="submit">Подписаться</button>
             </form>
           </div>
         </section>
       </main>
+
       <footer class="page-footer">
         <div class="page-footer-container">
           <section class="footer-social">
